@@ -2,10 +2,10 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-/* 
+/*
 
-  //Given this problem: 
-  
+  //Given this problem:
+
   function firstItem(arr, cb) {
     // firstItem passes the first item of the given array to the callback function.
   }
@@ -17,7 +17,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
     return cb(arr[0]);
   }
 
-  // Function invocation 
+  // Function invocation
   firstItem(items, function(first) {
     console.log(first)
   });
@@ -25,25 +25,43 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 */
 
 
-function getLength(arr, cb) {
+function getLength(items, cb) {
   // getLength passes the length of the array into the callback.
+  cb(items.length);
 }
+ getLength(items, (length) => {
+   console.log(length);
+ });
 
-function last(arr, cb) {
+function last(items, cb) {
   // last passes the last item of the array into the callback.
+  cb(items[items.length-1]);
 }
+  last(items, (lastThing) =>{
+    console.log(lastThing);
+  }
+);
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  cb(x+y);
 }
+
+  sumNums(items, (added) => {
+    console.log(added);
+  });
+
+
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
 }
+// multiplyNums(10,10, showResult)
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  contains('Rosie, items, showResult')
 }
 
 /* STRETCH PROBLEM */

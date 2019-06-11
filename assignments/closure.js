@@ -1,6 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+let rainbow = 3;
+function doubleRainbow(x) {
+  let stars = x * 2
+  return stars;
+}
+
+let moon = doubleRainbow(rainbow);
+console.log(moon);
+
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
